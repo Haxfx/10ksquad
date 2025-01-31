@@ -15,7 +15,7 @@ const Footer = () => {
         }}
       />
       
-      
+      <FAQ />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center">
           <div className="mb-8">

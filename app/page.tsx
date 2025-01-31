@@ -7,7 +7,13 @@ import Squad from './components/Squad'
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className="relative">
+      <div 
+              className="absolute top-0 left-0 right-0 h-full bg-cover z-100 mt-[30vh]"
+              style={{
+                backgroundImage: 'url("/particles_new.webp")'
+              }}
+            />
       <Hero />
       <NftSection />
       <Squad />
