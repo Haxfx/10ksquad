@@ -37,7 +37,7 @@ const WhatsNew = () => {
           The 10k News
         </h2>
         <h2 className="text-4xl text-left font-adrip text-black mb-12">
-          What's New
+          What&#39;s New
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {newsItems.map((item) => (

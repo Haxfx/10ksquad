@@ -13,16 +13,16 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center text-sm space-x-8 items-left w-[60%]">
-          <Link href="/" className="text-white hover:text-purple-700">
+          <Link href="/" className="text-white hover:text-heading hover:font-bold">
             Home
           </Link>
-          <Link href="/collection" className="text-white hover:text-purple-700">
+          <Link href="/collection" className="text-white hover:text-heading hover:font-bold">
             Collection
           </Link>
-          <Link href="/about" className="text-white hover:text-purple-700">
+          <Link href="/about" className="text-white hover:text-heading hover:font-bold">
             About
           </Link>
-          <Link href="/team" className="text-white hover:text-purple-700">
+          <Link href="/team" className="text-white hover:text-heading hover:font-bold">
             Team
           </Link>
         </div>

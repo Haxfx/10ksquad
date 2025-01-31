@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NftSection = () => {
   return (
     <section className="py-20">
@@ -23,9 +25,11 @@ const NftSection = () => {
           <div className="w-1/3">
             <div className="relative">
               <div className="bg-backgroundLight rounded-xl pt-[19.5rem]">
-                <img 
+                <Image 
                   src="/bird.gif" 
                   alt="Featured NFT Gif" 
+                  width="100"
+                  height="100"
                   className="w-80 h-88 object-cover rounded-2xl shadow-xl absolute -top-8 left-4 transform hover:scale-125 transition-transform duration-300"
                 />
               </div>
