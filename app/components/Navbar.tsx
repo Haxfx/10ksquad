@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center z-20">
-          <Link href="/" className="text-heading text-xl font-luckiest tracking-widest-2">
+          <Link href="/" className="text-heading text-xl font-luckiest tracking-1">
             THE 10K SQUAD
           </Link>
         </div>
