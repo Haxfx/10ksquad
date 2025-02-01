@@ -3,6 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 export const metadata: Metadata = {
   title: "The 10k Squad",
@@ -18,6 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <html>
         <body className="font-poppins">
+        <Hero />
         <div className="min-h-screen">
           <Navbar />
           {children}

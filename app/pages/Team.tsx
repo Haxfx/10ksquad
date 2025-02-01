@@ -1,7 +1,9 @@
+"use client"
+
 import type { NextPage } from 'next'
 import Image from 'next/image'
 
-const TeamPage: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <div className="pt-20 px-8">
       <h1 className="text-4xl font-bold text-center mb-12">The 10k Squad</h1>
@@ -22,4 +24,4 @@ const TeamPage: NextPage = () => {
   )
 }
 
-export default TeamPage
+export default Home

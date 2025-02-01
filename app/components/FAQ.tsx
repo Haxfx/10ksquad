@@ -14,7 +14,7 @@ const FAQItem = ({ question, answer }: FAQProps) => {
   return (
     <div className={`transition-colors duration-300`}>
       <Button
-        className={`w-full py-2 px-6 text-left flex justify-between rounded-md items-center ${isOpen ? 'bg-[#58377E]' : ''} `}
+        className={`w-full py-2 px-6 text-left flex justify-between rounded-md items-center hover:bg-[#58377E] ${isOpen ? 'bg-[#58377E]' : ''} `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="text-lg font-medium">{question}</span>
@@ -71,7 +71,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="relative z-20 py-20 pt-40 px-8 text-white">
+    <section className="relative z-20 py-20 lg:pt-40 px-8 text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl mb-8 text-left text-white font-adrip">Frequently Asked Questions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
