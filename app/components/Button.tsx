@@ -18,8 +18,8 @@ interface ButtonProps {
     const baseStyles = "rounded-full font-medium transition-all duration-200";
     
     const variants = {
-      primary: "bg-pink-400 hover:bg-pink-500 text-white",
-      secondary: "bg-purple-900 hover:bg-purple-800 text-white"
+      primary: "bg-pink-400 hover:bg-pink-500",
+      secondary: "bg-purple-900 hover:bg-purple-800"
     };
     
     const sizes = {

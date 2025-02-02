@@ -47,28 +47,31 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center text-sm space-x-8 items-left w-[60%]">
+        <div className="relative hidden lg:flex items-center text-sm space-x-8 items-left w-[60%]">
           <Link href="/" className="text-white hover:text-heading hover:font-bold transition-all duration-300">
             Home
           </Link>
-          <Link href="/collection" className="text-white hover:text-heading hover:font-bold transition-all duration-300">
+          <span className="text-white/50 cursor-not-allowed relative">
             Collection
-          </Link>
-          <Link href="/about" className="text-white hover:text-heading hover:font-bold transition-all duration-300">
+            <div className="absolute top-[-8] left-[4em] text-heading text-[0.7em]">Soon</div>
+          </span>
+          <span className="text-white/50 cursor-not-allowed relative">
             About
-          </Link>
+            <div className="absolute top-[-8] left-[3em] text-heading text-[0.7em]">Soon</div>
+          </span>
           <Link href="/team" className="text-white hover:text-heading hover:font-bold transition-all duration-300">
             Team
           </Link>
         </div>
 
-        {/* Desktop Connect Button */}
-        <button 
+         {/* Desktop Connect Button */}
+         <button 
           className="hidden lg:block text-xs bg-purple-900 text-white px-5 py-2 rounded-full hover:bg-purple-800 hover-glow gradient-button" 
           disabled={true}
         >
           Connect wallet
         </button>
+
 
         {/* Mobile Menu Overlay */}
         <div 
@@ -88,20 +91,14 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link 
-              href="/collection" 
-              className="text-white hover:text-heading hover:font-bold transition-all duration-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <span className="text-white/50 cursor-not-allowed relative">
               Collection
-            </Link>
-            <Link 
-              href="/about" 
-              className="text-white hover:text-heading hover:font-bold transition-all duration-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
+              <span className="absolute top-0 -right-8 text-heading text-[0.7em]">Soon</span>
+            </span>
+            <span className="text-white/50 cursor-not-allowed relative">
               About
-            </Link>
+              <span className="absolute top-0 -right-8 text-heading text-[0.7em]">Soon</span>
+            </span>
             <Link 
               href="/team" 
               className="text-white hover:text-heading hover:font-bold transition-all duration-300"

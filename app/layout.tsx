@@ -18,13 +18,19 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <html>
-        <body className="font-poppins">
-        <Hero />
-        <div className="min-h-screen">
-          <Navbar />
-          {children}
-        </div>
-        <Footer />
+        <body className="relative font-poppins h-full">
+          {/* <div 
+            className="absolute top-0 left-0 right-0 h-[100%] z-50"
+            style={{
+              backgroundImage: 'url("/particles_new.webp")'
+            }}
+          /> */}
+          <Hero />
+          <div className="min-h-screen">
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
         </body>
       </html>
     </>

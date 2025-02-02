@@ -17,46 +17,25 @@ const TeamPage = () => {
   const artistMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Artist 1",
-      role: "Lead Artist",
+      name: "Rogie",
+      role: "NFT Artist",
       description: "Creating unique and vibrant artwork for the 10K Squad collection.",
-      image: "/team/1000026806.png"
+      image: "/team/Rogie.png"
     },
     {
       id: 2,
-      name: "Artist 2",
-      role: "Character Designer",
+      name: "Emil",
+      role: "NFT Artist",
       description: "Specializing in character design and animation.",
-      image: "/team/artist2.png"
+      image: "/team/Emil.png"
     },
     {
       id: 3,
-      name: "Artist 3",
-      role: "Background Artist",
+      name: "Kseniya",
+      role: "NFT Artist",
       description: "Crafting immersive backgrounds and environments.",
-      image: "/team/artist3.png"
+      image: "/team/Kseniya.png"
     },
-    {
-      id: 4,
-      name: "Artist 4",
-      role: "Concept Artist",
-      description: "Developing initial concepts and visual direction.",
-      image: "/team/artist4.png"
-    },
-    {
-      id: 5,
-      name: "Artist 5",
-      role: "Digital Artist",
-      description: "Expert in digital art and NFT creation.",
-      image: "/team/artist5.png"
-    },
-    {
-      id: 6,
-      name: "Artist 6",
-      role: "Creative Director",
-      description: "Overseeing the artistic vision of the project.",
-      image: "/team/artist6.png"
-    }
   ];
 
   const squadMembers: TeamMember[] = [
@@ -147,7 +126,8 @@ const TeamPage = () => {
   ];
 
   return (
-    <section className="relative py-20 lg:px-20"><div 
+    <section className="relative py-20 lg:px-20 z-20 min-h-[70rem]">
+      <div 
         className="absolute inset-0 bg-cover bg-top z-0 top-[-9rem] mb-[-12rem]"
         style={{
           backgroundImage: 'url("/team_bg.webp")',
@@ -162,59 +142,61 @@ const TeamPage = () => {
           <div className="flex">
           <button 
             onClick={() => setActiveTab('squad')}
-            className={`px-6 py-2 transition-allduration-300
+            className={`px-6 py-2 transition-allduration-300 text-2xl
               ${activeTab === 'squad' 
                 ? 'text-white' 
                 : 'text-white/20'}`}
                 >
-            10K Squad
+            The 10K Squad
           </button>
           <button 
             onClick={() => setActiveTab('artists')}
-            className={`px-6 py-2 rounded-full transition-all duration-300
+            className={`px-6 py-2 rounded-full transition-all duration-300 text-2xl
               ${activeTab === 'artists' 
                 ? 'text-white' 
                 : 'text-white/20'}`}
                 >
-            10K Artists
+             The 10K Artists
           </button>
             </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {(activeTab === 'squad' ? squadMembers : artistMembers).map((member) => (
-            <div 
-              key={member.id} 
-              className="bg-background rounded-xl p-6 text-black hover:transform 
-                         hover:scale-105 transition-transform relative overflow-hidden"
-            >
               <div 
-                className="absolute top-0 left-0 right-0 h-56 bg-cover bg-center opacity-100"
-                style={{
-                  backgroundImage: `url('${member.image}')`
-                }}
-              />
-              <div className="relative z-10 mt-44 -mb-10"> 
+                key={member.id} 
+                className="bg-background p-6 text-black hover:transform 
+                          hover:scale-105 transition-transform relative rounded-xl pb-10"
+              >
+                <div className="rounded-xl">
                 <div 
-                  className="absolute top-[-20px] left-5 h-7 w-7 z-10 bg-cover bg-center"
+                  className="absolute top-0 rounded-xl left-0 right-0 h-56 bg-cover bg-center opacity-100"
                   style={{
-                    backgroundImage: 'url(`/logo_10k.webp")'
+                    backgroundImage: `url('${member.image}')`
                   }}
                 />
-                <h3 className="text-xl font-bold text-left mb-2">{member.name}</h3>
-                <p className="text-sm font-bold text-left text-purple-900 mb-2">{member.role}</p>
-                <p className="text-xs text-left text-purple-900/80">{member.description}</p>
-                <div className="flex justify-center space-x-3 mt-4">
-                  <a href="#" className="text-purple-900 hover:text-purple-700">
+                <div className="relative z-10 mt-52 -mb-8"> 
+                  <div 
+                    className="absolute top-[-20px] left-5 h-7 w-7 z-10 bg-cover bg-center"
+                    style={{
+                      backgroundImage: 'url(`/logo_10k.webp")'
+                    }}
+                  />
+                  <h3 className="text-lg font-bold text-left">{member.name}</h3>
+                  <p className="text-sm font-bold text-left text-purple-900 mb-2">{member.role}</p>
+                  <p className="text-xs text-left text-black">{member.description}</p>
+                  
+                </div>
+                </div>
+                <div className="absolute flex justify-center space-x-3 mt-4 bg-[#431E6E] p-3 z-20 rounded-md right-4 bottom-[-1.5em]">
+                  <a href="#" className=" text-purple-900 hover:text-purple-700">
                     <Image 
                       src="/twitter.svg" 
                       alt="Twitter" 
                       width={20} 
                       height={20}
-                      className="opacity-50 hover:opacity-100 transition-opacity"
                     />
                   </a>
-                </div>
               </div>
             </div>
           ))}

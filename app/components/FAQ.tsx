@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Button from "./Button";
+import { useIsTeamPage } from "../useIsTeamPage";
 
 interface FAQProps {
   question: string;
@@ -10,11 +11,12 @@ interface FAQProps {
 
 const FAQItem = ({ question, answer }: FAQProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const isTeamPage = useIsTeamPage();
 
   return (
     <div className={`transition-colors duration-300`}>
       <Button
-        className={`w-full py-2 px-6 text-left flex justify-between rounded-md items-center hover:bg-[#58377E] ${isOpen ? 'bg-[#58377E]' : ''} `}
+        className={`w-full py-2 px-6 flex justify-between rounded-md items-center ${isOpen ? isTeamPage ? 'bg-[#F7BEDD]' : 'bg-[#58377E]' : ''} ${isTeamPage ? 'text-black hover:bg-[#F7BEDD] ' : 'text-white hover:bg-[#58377E]'}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="text-lg font-medium">{question}</span>
@@ -40,6 +42,8 @@ const FAQItem = ({ question, answer }: FAQProps) => {
 };
 
 const FAQ = () => {
+  const isTeamPage = useIsTeamPage();
+  
   const leftQuestions = [
     {
       question: "What is good about this project?",
@@ -58,22 +62,22 @@ const FAQ = () => {
   const rightQuestions = [
     {
       question: "When is the next drop?",
-      answer: "Stay tuned to our social media channels for upcoming drop announcements."
+      answer: "Stay tuned to our social media channels for upcoming announcements."
     },
     {
       question: "How do I get whitelisted?",
-      answer: "Active community members have a chance to get whitelisted for upcoming drops."
+      answer: "Active community members have a chance to get whitelisted when participating in events."
     },
     {
       question: "What's the roadmap?",
-      answer: "Our roadmap includes exclusive events, merchandise, and community-driven initiatives."
+      answer: "Our roadmap currently includes events and community-driven initiatives."
     }
   ];
 
   return (
-    <section className="relative z-20 py-20 lg:pt-40 px-8 text-white">
+    <section className={`relative z-20 py-20 lg:pt-40 px-8 ${isTeamPage ? 'text-black' : 'text-white'}`}>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl mb-8 text-left text-white font-adrip">Frequently Asked Questions</h2>
+        <h2 className={`text-4xl mb-8 text-left font-adrip ${isTeamPage ? 'text-black' : 'text-white'}`}>Frequently Asked Questions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden">
             {leftQuestions.map((item, index) => (
