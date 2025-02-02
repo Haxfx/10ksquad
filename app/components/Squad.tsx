@@ -4,7 +4,7 @@ const Squad = () => {
   return (
     <section className="relative py-32 pt-40 min-h-[40em] flex items-center">
       <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="absolute inset-0 bg-cover lg:cover-fit bg-center lg:bg-top z-0"
         style={{
           backgroundImage: 'url("/middle_bg.webp")',
           opacity: '1'
