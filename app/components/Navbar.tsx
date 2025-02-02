@@ -53,7 +53,7 @@ const Navbar = () => {
           </Link>
           <span className="text-white/50 cursor-not-allowed relative">
             Collection
-            <div className="absolute top-[-8] left-[4em] text-heading text-[0.7em]">Soon</div>
+            <div className="absolute top-[-8] left-[5.9em] text-heading text-[0.7em]">Soon</div>
           </span>
           <span className="text-white/50 cursor-not-allowed relative">
             About
@@ -93,11 +93,11 @@ const Navbar = () => {
             </Link>
             <span className="text-white/50 cursor-not-allowed relative">
               Collection
-              <span className="absolute top-0 -right-8 text-heading text-[0.7em]">Soon</span>
+              <span className="absolute top-0 -right-18 text-heading text-[0.7em]">Soon</span>
             </span>
             <span className="text-white/50 cursor-not-allowed relative">
               About
-              <span className="absolute top-0 -right-8 text-heading text-[0.7em]">Soon</span>
+              <span className="absolute top-0 -right-18 text-heading text-[0.7em]">Soon</span>
             </span>
             <Link 
               href="/team" 
