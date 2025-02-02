@@ -52,16 +52,16 @@ const WhatsNew = () => {
                   backgroundImage: 'url("/news.webp")'
                 }}
               />
-              <div className="relative z-10 mt-28 h-28"> 
+              <div className="z-10 mt-28 h-28"> 
                 <div 
-                  className="absolute top-[-20] left-5 h-7 w-7 z-10 bg-cover bg-center opacity-100"
+                  className="absolute bottom-32 left-11 h-7 w-7 z-10 bg-cover bg-center opacity-100"
                   style={{
                     backgroundImage: 'url("/logo_10k.webp")'
                   }}
                 />
                 <h3 className="text-md text-black mb-3 pt-6">{item.title}</h3>
                 <p className="text-xs text-black mb-4">{item.description}</p>
-                <button className="absolute text-xs bottom-[-40] right-0 transform 
+                <button className="absolute text-xs -bottom-[18] right-4 transform 
                                  bg-purple-800 hover:bg-pink-500 text-white px-3 
                                  py-2 rounded-lg transition-colors shadow-lg">
                   Get me there!
