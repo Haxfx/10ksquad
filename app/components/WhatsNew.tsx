@@ -47,7 +47,8 @@ const WhatsNew = () => {
                          hover:scale-105 transition-transform relative overflow-visible cursor-pointer"
             >
               <div 
-                className="absolute rounded-xl top-0 left-0 right-0 h-32 bg-cover bg-center opacity-100"
+                className="absolute rounded-xl top-0 left-0 right-0 h-32 bg-cover bg-center opacity-100
+                          shadow-[inset_0_20px_20px_rgba(0,0,0,0.4)]"
                 style={{
                   backgroundImage: 'url("/news.webp")'
                 }}
