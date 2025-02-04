@@ -12,15 +12,15 @@ const WhatsNew = () => {
   const newsItems: NewsCard[] = [
     {
       id: 1,
-      title: "Sneak Peaks",
-      description: "Sneak peaks will be posted in our discord. Stay tunned!",
+      title: "Monad Mach 2: NFT accelerator",
+      description: "We were part of Monad Mach 2: NFT accelerator",
       image: "/news.webp",
-      url: "/",
+      url: "https://x.com/the10kSquad/status/1884577898591334773?t=DHwCigxO4C7F55WWrKDA4w&s=19",
     },
     {
       id: 2,
-      title: "New Collection Drop",
-      description: "Don't miss our exclusive drop",
+      title: "Sneak Peaks",
+      description: "Sneak peaks will be posted in our discord. Stay tunned!",
       image: "/news_2.webp",
       url: "/",
     },
