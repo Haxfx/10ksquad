@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6 mb-6">
             <Link 
-              href="https://discord.gg/10ksquad" 
+              href="/" 
               className={`${isTeamPage ? 'text-black' : 'text-pink-400'} hover:text-pink-300 transform hover:scale-110 transition-all duration-300`}
             >
               <Image 
@@ -50,7 +50,7 @@ const Footer = () => {
               />
             </Link>
             <Link 
-              href="https://twitter.com/10ksquad" 
+              href="https://x.com/the10kSquad" 
               className={`${isTeamPage ? 'text-black' : 'text-pink-400'} hover:text-pink-300 transform hover:scale-110 transition-all duration-300`}
             >
               <Image 

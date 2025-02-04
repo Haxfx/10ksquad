@@ -178,6 +178,14 @@ const TeamPage = () => {
       description: "He is keeping the team sane, and somehow convincing everyone that it's all under control—just before the next unexpected curveball lands.",
       image: "/team/sikdar.png",
       twitter: "https://x.com/thepop10128"
+    },
+    {
+      id: 13,
+      name: "Razec",
+      role: "Gbeer",
+      description: "He is always drunk so he will probably not do any work around. We keep him only for free beers he provides.",
+      image: "/team/Razec.jpg",
+      twitter: "https://x.com/razecbtc?t=9mrEbayehNhpP4b9adQXYg&s=09"
     }
   ];
 
