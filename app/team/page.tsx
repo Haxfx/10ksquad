@@ -29,7 +29,7 @@ const TeamPage = () => {
       name: "Oscar",
       role: "Not Academy Winner",
       description: "He is fighting against time and he do not like cheese.",
-      image: "/team/Oscar.png",
+      image: "/team/oscar.png",
       twitter: "https://x.com/Oscarfortunes"
     },
     {
@@ -77,7 +77,7 @@ const TeamPage = () => {
       name: "Havo",
       role: "Boy Toy",
       description: "This artist treats dating like a performance piece—every date is a \"creative experiment.\" He'll bring a sketchpad to dinner, taking notes on \"emotional reactions\" while pretending not to check their phone for new matches.",
-      image: "/team/HavoMartinez.png",
+      image: "/team/havo.png",
       twitter: "https://x.com/HavoMartinez"
     },
   ];
