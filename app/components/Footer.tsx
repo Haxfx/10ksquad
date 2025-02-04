@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="container text-center text-sm">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
               <p className={`order-2 lg:order-1 ${isTeamPage ? 'text-black' : 'text-pink-400'}`}>
-                © 2025 The 10K Squad. All rights reserved.
+                © 2025 The 10K Squad and Manymore. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-between space-x-4 order-1 lg:order-2">
                 <Link href="/privacy" className={`${isTeamPage ? 'text-black hover:text-gray-600' : 'text-pink-400 hover:text-pink-300'}`}>
