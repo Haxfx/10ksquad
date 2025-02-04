@@ -5,11 +5,15 @@ const Hero = () => {
     <section className="min-h-screen relative">
       <div className="h-screen relative z-30">
         <div 
-          className="absolute inset-0 bg-cover z-0"
+          className="absolute inset-0 bg-cover bg-center z-0"
           style={{
             backgroundImage: 'url("/header_bg.webp")',
             opacity: '1',
-            backgroundPosition: '50% 98%',
+            transform: 'scale(1.1)',
+            height: '120vh',
+            top: '-25vh',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
           }}
         />
       </div>
