@@ -9,6 +9,7 @@ interface TeamMember {
   role: string;
   description: string;
   image: string;
+  twitter: string;
 }
 
 const TeamPage = () => {
@@ -17,24 +18,67 @@ const TeamPage = () => {
   const artistMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Rogie",
-      role: "NFT Artist",
-      description: "Creating unique and vibrant artwork for the 10K Squad collection.",
-      image: "/team/Rogie.png"
+      name: "Casper",
+      role: "(not that) friendly ghost",
+      description: `This ghost artist spends eternity creating invisible art—no one ever sees it, but he swear it's "deep."`,
+      image: "/team/casper.webp",
+      twitter: "https://x.com/hicasp3r"
     },
     {
       id: 2,
-      name: "Emil",
-      role: "NFT Artist",
-      description: "Specializing in character design and animation.",
-      image: "/team/Emil.png"
+      name: "Oscar",
+      role: "Not Academy Winner",
+      description: "He is fighting against time and he do not like cheese.",
+      image: "/team/Oscar.png",
+      twitter: "https://x.com/Oscarfortunes"
     },
     {
       id: 3,
+      name: "Rogue",
+      role: "Wanna Be Badass",
+      description: "He's convinced his unfinished canvas is \"abstract genius,\" even though it looks like a toddler's finger-painting after too much coffee.",
+      image: "/team/Rogie.png",
+      twitter: "https://x.com/rogue110797"
+    },
+    {
+      id: 4,
+      name: "Blu",
+      role: "Chain Smoker",
+      description: "This artist smokes so much, his paintbrushes are probably nicotine-stained. He say the smoke helps him \"think deeper,\" but honestly, it's just turning his art into abstract smoke clouds.",
+      image: "/team/blu.webp",
+      twitter: "https://x.com/bbluuuuuuuu"
+    },
+    {
+      id: 5,
       name: "Kseniya",
-      role: "NFT Artist",
-      description: "Crafting immersive backgrounds and environments.",
-      image: "/team/Kseniya.png"
+      role: "Monana Weirdo",
+      description: "The only girl in the art squad that is as weird as the rest of them are. She is responsible for making whole community shake asses.",
+      image: "/team/Kseniya.png",
+      twitter: "https://x.com/klarico10"
+    },
+    {
+      id: 6,
+      name: "Sirenia",
+      role: "Gym Rat",
+      description: "Sirenia is a he, not a she! Crazy and weird and he fits right in!",
+      image: "/team/sirenia.webp",
+      twitter: "https://x.com/SireniaNFT"
+    },
+    {
+      id: 7,
+      name: "Emil",
+      role: "Banana Lover",
+      description: "This artist's latest masterpiece? A Monana—a mashup of Mona Lisa and a banana. He claim it's a bold commentary on the fragility of art, but honestly, it's just an overripe fruit taped to a canvas.",
+      image: "/team/emil.webp",
+      twitter: "https://x.com/emil_pepil"
+    },
+    {
+      id: 8,
+      name: "Havo",
+      role: "Boy Toy",
+      description: "This artist treats dating like a performance piece—every date is a \"creative experiment.\" He'll bring a sketchpad to dinner, taking notes on \"emotional reactions\" while pretending not to check their phone for new matches.",
+      image: "/team/HavoMartinez.png",
+      twitter: "https://x.com/HavoMartinez"
     },
   ];
 
@@ -44,84 +88,96 @@ const TeamPage = () => {
       name: "Puresoul",
       role: "Wannabe Founder",
       description: "Caffeine addict and workaholic. Leader of this Squad.",
-      image: "/team/puresoul.png"
+      image: "/team/puresoul.png",
+      twitter: "https://x.com/puresoul0109"
     },
     {
       id: 2,
       name: "LKA",
       role: "Lead Kindness Advocate",
       description: "Digital diva & creative catalyst combining visionary vibes with a tactical touch!",
-      image: "/team/lka.jpg"
+      image: "/team/lka.jpg",
+      twitter: "https://x.com/Lka10nft"
     },
     {
       id: 3,
       name: "MGD",
       role: "Mediator Gatekeeper Director",
       description: "Balancing grace with a touch of sidekick energy",
-      image: "/team/mgd.jpg"
+      image: "/team/mgd.jpg",
+      twitter: "https://x.com/atomicute"
     },
     {
       id: 4,
       name: "JEEZY",
       role: "Ban Hammer",
       description: "Because why be ordinary when you can be extraordinary?",
-      image: "/team/jeezy.jpg"
+      image: "/team/jeezy.jpg",
+      twitter: "https://x.com/jeezyhowyoudoin"
     },
     {
       id: 5,
       name: "CASH",
       role: "Newbies King",
       description: "I'm the referee, the babysitter, and the therapist—all in one. Welcome to the glamorous life of moderating.",
-      image: "/team/cash.jpg"
+      image: "/team/cash.jpg",
+      twitter: "https://x.com/Itsmekelam"
     },
     {
       id: 6,
       name: "AFONSO",
       role: "Jolly Fella",
       description: "A perfect balance of authority and cheer—he'll ban you, but only after making you smile. Also, Happy Holidays.",
-      image: "/team/afonso.jpg"
+      image: "/team/afonso.jpg",
+      twitter: "https://x.com/afonso_abreu__"
     },
     {
       id: 7,
       name: "KARATE KID",
       role: "Byte Me",
       description: "The person who knows more about bots than they do about people—yet somehow manages to make the server run smoother than your Wi-Fi during a Zoom meeting.",
-      image: "/team/karatekid.jpg"
+      image: "/team/karatekid.jpg",
+      twitter: "https://x.com/dgrua50"
     },
     {
       id: 8,
       name: "UDAY",
       role: "Bug Slayer",
       description: "Master at creating elegant solutions to problems he have never seen before, and master at creating even more problems for problems he've already solved.",
-      image: "/team/uday.png"
+      image: "/team/uday.png",
+      twitter: "https://x.com/uday_dhorajiya"
     },
     {
       id: 9,
       name: "THE INVISIBLE J",
       role: "Unsung Mod Hero",
       description: "Silently watching, making sure chaos doesn't erupt, and only stepping in when the conversation turns into a dumpster fire—usually just in time to say, \"Please keep it civil!\"",
-      image: "/team/theinvisiblej.jpg"
+      image: "/team/theinvisiblej.jpg",
+      twitter: "https://x.com/Jerrynj2"
     },
     {
       id: 10,
       name: "LEYS BOBR",
       role: "Your Wet Dream",
       description: "Is the fresh recruit who only knows two commands: \"mute\" and \"ban,\" and he use both liberally, hoping he'll figure out the rest later.",
-      image: "/team/leysbobr.PNG"
+      image: "/team/leysbobr.PNG",
+      twitter: "https://x.com/leysbobr"
     },
     {
       id: 11,
       name: "KUTSAL",
       role: "JPEG Pirate",
       description: "Navigating the high seas of the blockchain, searching for rare and valuable digital booty.",
-      image: "/team/kutsal.PNG"
+      image: "/team/kutsal.PNG",
+      twitter: "https://x.com/GurhanKutsal"
     },
     {
       id: 12,
       name: "SIKDAR",
       role: "Wannabe Colab Manager",
       description: "He is keeping the team sane, and somehow convincing everyone that it's all under control—just before the next unexpected curveball lands.",
-      image: "/team/sikdar.png"
+      image: "/team/sikdar.png",
+      twitter: "https://x.com/thepop10128"
     }
   ];
 
@@ -189,7 +245,7 @@ const TeamPage = () => {
                 </div>
                 </div>
                 <div className="absolute flex justify-center space-x-3 mt-4 bg-[#431E6E] p-3 z-20 rounded-md right-4 bottom-[-1.5em]">
-                  <a href="#" className=" text-purple-900 hover:text-purple-700">
+                  <a href={member.twitter} target="_blank" className=" text-purple-900 hover:text-purple-700">
                     <Image 
                       src="/twitter.svg" 
                       alt="Twitter" 
