@@ -19,10 +19,12 @@ const NftSection = () => {
               The 10k Squad was created as a place for all the misfits. 
               Everyone deserves to belong and we want to make sure that happens.
             </p>
-            <button className="text-[0.8em] bg-purple-900 text-white px-8 py-3 rounded-full 
-                             hover:bg-purple-800 hover-glow gradient-button">
-              Join Us
-            </button>
+            <a href="https://x.com/the10kSquad" target="_blank">
+              <button className="text-[0.8em] bg-purple-900 text-white px-8 py-3 rounded-full 
+                              hover:bg-purple-800 hover-glow gradient-button">
+                Join Us
+              </button>
+            </a>
           </div>
 
           {/* NFT Image */}

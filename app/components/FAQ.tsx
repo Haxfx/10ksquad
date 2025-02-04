@@ -55,15 +55,11 @@ const FAQ = () => {
     },
     {
       question: "What are the benefits?",
-      answer: "Members get exclusive access to events, drops, and special community perks."
+      answer: "Members gets all the fun and support that they need."
     }
   ];
 
   const rightQuestions = [
-    {
-      question: "When is the next drop?",
-      answer: "Stay tuned to our social media channels for upcoming announcements."
-    },
     {
       question: "How do I get whitelisted?",
       answer: "Active community members have a chance to get whitelisted when participating in events."

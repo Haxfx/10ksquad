@@ -4,29 +4,34 @@ interface NewsCard {
   id: number;
   title: string;
   description: string;
+  image: string;
 }
 
 const WhatsNew = () => {
   const newsItems: NewsCard[] = [
     {
       id: 1,
-      title: "Our Stories are Up",
-      description: "Check out our latest collection stories"
+      title: "Sneak Peaks",
+      description: "Sneak peaks will be posted in our discord. Stay tunned!",
+      image: "/news.webp"
     },
     {
       id: 2,
       title: "New Collection Drop",
-      description: "Don't miss our exclusive drop"
+      description: "Don't miss our exclusive drop",
+      image: "/whatsnew_2.webp"
     },
     {
       id: 3,
       title: "Community Update",
-      description: "See what's happening in our community"
+      description: "See what's happening in our community",
+      image: "/news.webp"
     },
     {
       id: 4,
       title: "Special Event",
-      description: "Join our upcoming special event"
+      description: "Join our upcoming special event",
+      image: "/news.webp"
     }
   ];
 
@@ -50,7 +55,7 @@ const WhatsNew = () => {
                 className="absolute rounded-xl top-0 left-0 right-0 h-32 bg-cover bg-center opacity-100
                           shadow-[inset_0_20px_20px_rgba(0,0,0,0.4)]"
                 style={{
-                  backgroundImage: 'url("/news.webp")'
+                  backgroundImage:`url("${item.image}")`
                 }}
               />
               <div className="flex flex-col z-10 mt-28 h-28"> 
