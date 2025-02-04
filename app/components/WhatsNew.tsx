@@ -5,6 +5,7 @@ interface NewsCard {
   title: string;
   description: string;
   image: string;
+  url: string;
 }
 
 const WhatsNew = () => {
@@ -13,25 +14,29 @@ const WhatsNew = () => {
       id: 1,
       title: "Sneak Peaks",
       description: "Sneak peaks will be posted in our discord. Stay tunned!",
-      image: "/news.webp"
+      image: "/news.webp",
+      url: "/",
     },
     {
       id: 2,
       title: "New Collection Drop",
       description: "Don't miss our exclusive drop",
-      image: "/whatsnew_2.webp"
+      image: "/news_2.webp",
+      url: "/",
     },
     {
       id: 3,
       title: "Community Update",
-      description: "See what's happening in our community",
-      image: "/news.webp"
+      description: "Follow us on twitter  for all the info.",
+      image: "/news.webp",
+      url: "https://x.com/the10kSquad",
     },
     {
       id: 4,
       title: "Special Event",
-      description: "Join our upcoming special event",
-      image: "/news.webp"
+      description: "The 10k squad artists will draw entire collection in Live VC chats in Monad and Monad Eco projects.",
+      image: "/news.webp",
+      url: "https://x.com/the10kSquad/status/1884283579074764874?t=hxVXpbTTIMaDfRO98M1GOg&s=19",
     }
   ];
 
@@ -68,11 +73,13 @@ const WhatsNew = () => {
                 <h3 className="text-md text-black mb-3 pt-6">{item.title}</h3>
                 <p className="text-xs text-black mb-4">{item.description}</p>
               </div>
-              <button className="absolute text-xs -bottom-[18] right-4 transform 
+              <a href={item.url} target="_blank">
+                <button className="absolute text-xs -bottom-[18] right-4 transform 
                                  bg-purple-800 hover:bg-pink-500 text-white px-3 
                                  py-2 rounded-lg transition-colors shadow-lg">
                   Get me there!
                 </button>
+              </a>
             </div>
           ))}
         </div>
