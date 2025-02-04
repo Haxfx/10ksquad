@@ -7,7 +7,7 @@ const Hero = () => {
         <div 
           className="relative inset-0 bg-cover bg-center z-0"
           style={{
-            backgroundImage: 'url("/header_bg.webp")',
+            backgroundImage: 'url("/hero.webp")',
             opacity: '1',
             transform: 'scale(1.1)',
             height: '120vh',
