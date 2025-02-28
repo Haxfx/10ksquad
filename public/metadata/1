@@ -1,0 +1,29 @@
+{
+    "name": "The 10k Squad #1",
+    "image": "https://the10ksquad.xyz/collection/1.png",
+    "tokenId": 1,
+    "Creator ": " The 10k Squad ",
+    "Creator's Social ": " https://x.com/the10kSquad",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "BabyBlue"
+        },
+        {
+            "trait_type": "Skin",
+            "value": "Base"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "Fire"
+        },
+        {
+            "trait_type": "Head",
+            "value": "Faucet"
+        },
+        {
+            "trait_type": "Clothes",
+            "value": "Afonso"
+        }
+    ]
+}
